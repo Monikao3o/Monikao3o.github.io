@@ -279,11 +279,18 @@ nav {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 7px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-header .nav-transparent {
+/* header .nav-transparent {
     background-color: transparent !important;
     background-image: none;
     box-shadow: none;
-}
+} */
+
+header .nav-transparent {
+    /* background-color: transparent !important;*/
+   background-color: #000B3F;
+     background-image: none;
+     box-shadow: none;
+ }
 
 header nav .brand-span {
     font-size: 1.45rem;
@@ -550,10 +557,10 @@ header .go-back i {
     height: 40vh !important;
 }
 
-.bg-cover:after {
+/* .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-}
+} */
 
 .bg-cover:before,
 .bg-cover:after {
