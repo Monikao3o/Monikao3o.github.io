@@ -4,14 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="AI视觉WAPI无线抄表平台解决方案(国家电网), Chaonero&#39;s Blog">
-    <meta name="description" content="AI视觉WAPI无线抄表平台解决方案
-
-背景和意义
-在变电站等电力作业场所，抄表是日常巡检和运维中一项必备的工作。传统的人工抄表方式面临着作业量大，实时性和准确性较低等特点。近年来发展的其他手段也面临着一些问题：
-
-
-数字化表：">
+    <meta name="keywords" content="基于云服务器搭建的Chatgpt, Chaonero&#39;s Blog">
+    <meta name="description" content="带运营的CHATGPT搭建
+一、 准备工作
+1． 操作系统选择CentOS 7.9的云服务器
+2． 在服务器安全组中80端口和8080端口
+二、 开始搭建
+1． 连接云服务器，在命令行中运行以下代码
+bash &amp;lt;(curl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +23,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>AI视觉WAPI无线抄表平台解决方案(国家电网) | Chaonero&#39;s Blog</title>
+    <title>基于云服务器搭建的Chatgpt | Chaonero&#39;s Blog</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Monikao3o/Monikao3o.github.io/favicon.png">
     
 
@@ -340,12 +340,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Monikao3o/Monikao3o.github.io/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Monikao3o/Monikao3o.github.io/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">AI视觉WAPI无线抄表平台解决方案(国家电网)</h1>
+                    <h1 class="description center-align post-title">基于云服务器搭建的Chatgpt</h1>
                 </div>
             </div>
         </div>
@@ -369,8 +369,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/STM32-%E5%B5%8C%E5%85%A5%E5%BC%8F/">
-                                <span class="chip bg-color">STM32 嵌入式</span>
+                            <a href="/tags/CHATGPT-AI-OPENAI/">
+                                <span class="chip bg-color">CHATGPT AI OPENAI</span>
                             </a>
                         
                     </div>
@@ -406,39 +406,91 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="ai视觉wapi无线抄表平台解决方案">AI视觉WAPI无线抄表平台解决方案</h1>
-<ol type="1">
-<li><h2 id="背景和意义">背景和意义</h2>
-在变电站等电力作业场所，抄表是日常巡检和运维中一项必备的工作。传统的人工抄表方式面临着作业量大，实时性和准确性较低等特点。近年来发展的其他手段也面临着一些问题：</li>
-</ol>
-<ul>
-<li>数字化表：这类表通过替换原有的表实现数字有线或无线总线上传，解决了人工抄表面临的困难。但是改造量大、投入高，对于一些需要和高压等危险装置交互的表来讲，数字化表的可靠性和经济性还不足以取代传统仪表；</li>
-<li>集中式视觉抄表：对于类似于变压器监测等参数多、表的安放集中、抄表频率高等应用来讲。目前正在使用集中式视觉抄表，通过有线方式部署高清摄像头来实现实时抄表。但是对于大量分散部署的仪表来讲，这种方式并不是适用。</li>
-</ul>
-<p>本方案以避雷器在线监测器为例，阐述AI视觉WAPI无线抄表平台解决方案。避雷器在线监测器在变电站当中部署数量大且分散，需要定期（每日）抄表，带来了繁重的工作。是需要进行自动化抄表升级的典型代表。</p>
-<p>目前一些公司推出了纯数字化的避雷器在线监测器，和传统的相比，体积大、成本高、改造费用高。并没有普及推广。</p>
-<p>本方案不对原有的避雷器在线监测器的安装和接线做任何改造和破坏，在其基础上增加视觉抄表盖，实现无缝接入的自动化抄表。</p>
-<ol type="1">
-<li><h3 id="系统组成">系统组成</h3></li>
-</ol>
+                <h1 id="带运营的chatgpt搭建">带运营的CHATGPT搭建</h1>
+<h2 id="一-准备工作">一、 准备工作</h2>
+<p>1． 操作系统选择CentOS 7.9的云服务器</p>
+<p>2． 在服务器安全组中80端口和8080端口</p>
+<h2 id="二-开始搭建">二、 开始搭建</h2>
+<p>1． 连接云服务器，在命令行中运行以下代码</p>
+<p>bash &lt;(curl -s https://raw.githubusercontent.com/Nanjiren01/AIChatWeb/main/scripts/setup.sh)</p>
+<p>2． 命令运行过程中，需要设置超级管理员的账号和密码（请将aichat888更改为自己的账号密码并牢记），如下所示：</p>
+<p>Please input the super admin username.</p>
+<p>Only letters and numbers are supported, the length should between 6 and 20, and they cannot start with a number.</p>
+<p>Username: 自己的用户名</p>
+<p>Super Admin Username is valid.</p>
+<p>Please input the super admin password.</p>
+<p>Only letters and numbers are supported, and the length should between 6 and 20.</p>
+<p>You can change it on the web page after the Application running</p>
+<p>Password: 自定义的密码</p>
+<p>Super Admin Password is valid.</p>
+<p>3． 当出现以下提示，说明部署成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[+] Running 5/5</span><br><span class="line"> ✔ Network root_default      Created</span><br><span class="line"> ✔ Container aichat-db       Started</span><br><span class="line"> ✔ Container aichat-admin    Started</span><br><span class="line"> ✔ Container aichat-console  Started</span><br><span class="line"> ✔ Container aichat-web      Started    </span><br></pre></td></tr></table></figure>
+<p>4． 稍等几秒钟应用初始化</p>
+<p>即可打开<a target="_blank" rel="noopener" href="http://服务器IP，访问前台页面；打开http:/服务器IP:8080访问后台服务。">http://服务器IP，访问前台页面；打开http://服务器IP:8080访问后台服务。</a></p>
+<h2 id="三-功能介绍">三、 功能介绍</h2>
+<h3 id="前后台界面预览">前后台界面预览</h3>
+<h3 id="用户前台">用户前台</h3>
+<h3 id="聊天">1、聊天</h3>
 <figure>
-<img src="I:\ProjectNEW\自动抄表装置\电表bzt\电表bzt_00000.png" alt="电表bzt_00000" /><figcaption>电表bzt_00000</figcaption>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image003.png" alt="image003" /><figcaption>image003</figcaption>
 </figure>
-<ol type="1">
-<li><h3 id="视觉抄表盖">视觉抄表盖</h3>
-<p>视觉抄表盖能够紧密贴合的扣在现有的避雷器在线监测器上，内置电池、高性能低功耗处理器、WAPI模组和摄像头。能够实现长待机时间的：拍照、识别（也可以在边缘计算网关侧识别）和传输。同时，为了方便现场巡检时查看表的参数和状态，也可以通过无线遥控器将参数显示在抄表盖外侧显示屏上（为节约功耗，显示器默认关闭）。</p>
-<p>图：视觉抄表盖分解爆炸图</p></li>
-<li><h3 id="wapi基站">WAPI基站</h3>
-<p>对变电站实现全覆盖的WAPI基站，用于接受视觉抄表盖上传的数据，以及发送边缘计算网关对视觉抄表盖下达的指令。</p></li>
-<li><h3 id="边缘计算网关">边缘计算网关</h3>
-<p>边缘计算网关通过有线的方式接入WAPI基站所在的网络，用于汇聚视觉抄表盖的信息，下达相关指令并在特定配置下完成表参数的视觉识别。</p></li>
-<li><h3 id="主要参数和技术特点">主要参数和技术特点</h3></li>
-<li><h3 id="使用wapi无线通信方式符合国家电网对无线通信方式最新的发展规划和安全需求">使用WAPI无线通信方式，符合国家电网对无线通信方式最新的发展规划和安全需求；</h3></li>
-<li><h3 id="应用低功耗高性能的嵌入式处理器和拍摄模组在每小时抄表一次的情况下能够实现3年以上的待机功耗">应用低功耗、高性能的嵌入式处理器和拍摄模组，在每小时抄表一次的情况下能够实现3年以上的待机功耗；</h3></li>
-<li><h3 id="电池供电和无线传输不需要外部有线连接部署和维护成本低">电池供电和无线传输：不需要外部有线连接，部署和维护成本低；</h3></li>
-<li><h3 id="所有ic和元器件可以使用国产化器件">所有IC和元器件可以使用国产化器件；</h3></li>
-<li><h3 id="同时支持视觉表盖识别和边缘网关识别两种模式适应多种应用场景">同时支持视觉表盖识别和边缘网关识别两种模式，适应多种应用场景；</h3></li>
-</ol>
+<h3 id="登录">2、登录</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image004.png" alt="image004" /><figcaption>image004</figcaption>
+</figure>
+<h3 id="注册">3、注册</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image005.png" alt="image005" /><figcaption>image005</figcaption>
+</figure>
+<h3 id="个人中心">4、个人中心</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image006.png" alt="image006" /><figcaption>image006</figcaption>
+</figure>
+<h3 id="绘图image007">5、绘图<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image007.jpg" alt="image007" /></h3>
+<h3 id="管理后台">管理后台</h3>
+<h3 id="仪表盘">1、仪表盘</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image008.jpg" alt="image008" /><figcaption>image008</figcaption>
+</figure>
+<h3 id="会员列表">2、会员列表</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image009.jpg" alt="image009" /><figcaption>image009</figcaption>
+</figure>
+<h3 id="订单列表">3、订单列表</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image010.jpg" alt="image010" /><figcaption>image010</figcaption>
+</figure>
+<h3 id="兑换码">4、兑换码</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image011.jpg" alt="image011" /><figcaption>image011</figcaption>
+</figure>
+<h3 id="站点管理">5、站点管理</h3>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image012.jpg" alt="image012" /><figcaption>image012</figcaption>
+</figure>
+<h2 id="四-关于gpt-api的计算">四、 关于GPT API的计算</h2>
+<p>第三方API：https://aihubmix.com <strong>目前是一美元为4.9人民币，详细以</strong><a target="_blank" rel="noopener" href="https://aihubmix.com/topup">充值</a><strong>页面进入购买页最终价格为准。</strong></p>
+<p>在该网站上，额度是一切的衡量标准</p>
+<h2 id="计费单位token">计费单位：Token</h2>
+<p>而所有模型的计费方式，就是基于消耗的多少token来计算价格。 大部分情况下，你都可以使用 1 汉字 = 2 token 来近似估算中文聊天的中文所需 token 数； 但我们不对这个换算负责，因为不同的字实际token不一样，官方只按token计算。</p>
+<p>额度 = 分组倍率 * 基准价格 * 模型倍率 * （提示 token 数 + 补全 token 数 * 补全倍率）</p>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image013.png" alt="image013" /><figcaption>image013</figcaption>
+</figure>
+<p>在日志中，看到这样一条数据</p>
+<p>0．000778 = 1<em>2</em>10^(-6)<em>0.75</em>（414 +52*2）</p>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image014.png" alt="image014" /><figcaption>image014</figcaption>
+</figure>
+<p>提示：即为用户使用时输入到模型的所有信息。</p>
+<p>补全：即为模型输出的所有信息</p>
+<p>输入和输出都是要扣费的；</p>
+<p>如果是非流模式，官方接口会返回消耗的总 token，但是你要注意提示和补全的消耗倍率不一样。 基准价格：在上述额度计算公式中，基准价格为官方Gpt-3.5的计费标准：两美元一百万提示token数。我们以该价格作为计算额度时的基准价格。</p>
+<p>模型倍率：由于不同模型的价格不同，所以在基准价格上乘以模型倍率(比如gpt-4价格为30美元一百万提示token数，价格为Gpt-3.5的15倍。则在使用gpt-4时模型倍率为15）来计算额度。 补全倍率：在同一个模型的官方定价中，提示token与补全token的价格也不同。 如下图，gpt-4的价格为30美元一百万提示token，60美元100万补全token数。</p>
+<figure>
+<img src="I:\ProjectNEW\项目介绍\带运营的CHATGPT.files\image015.jpg" alt="image015" /><figcaption>image015</figcaption>
+</figure>
+<p>Gpt-4的补全token价格为提示token价格的两倍，因此我们定使用gpt-4时补全倍率为2。 将补全token数<em>补全倍率换算为等价的提示token数，再加上原本的提示token数，可以得出计价的token数。即：（提示 token 数 + 补全 token 数 </em> 补全倍率）</p>
 
                 
             </div>
@@ -503,8 +555,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/STM32-%E5%B5%8C%E5%85%A5%E5%BC%8F/">
-                                    <span class="chip bg-color">STM32 嵌入式</span>
+                                <a href="/tags/CHATGPT-AI-OPENAI/">
+                                    <span class="chip bg-color">CHATGPT AI OPENAI</span>
                                 </a>
                             
                         </div>
@@ -583,10 +635,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2024/04204269.html">
                     <div class="card-image">
@@ -604,9 +655,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-04-20
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -615,7 +666,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -634,13 +684,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/04200.html">
+                <a href="/2024/042014097.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Monikao3o/Monikao3o.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/Monikao3o/Monikao3o.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="Chatgpt的定价计算">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Chatgpt的定价计算</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -660,6 +710,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CHATGPT/">
+                        <span class="chip bg-color">CHATGPT</span>
+                    </a>
+                    
                 </div>
                 
             </div>
